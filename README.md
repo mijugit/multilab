@@ -1,2 +1,2 @@
-# multilab
-multilab
+# MULTILAB
+Opis Klas
