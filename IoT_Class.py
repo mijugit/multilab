@@ -1,4 +1,4 @@
-class IoT_class:
+class IoT_Device:
     Device_Name = ''        # Nazwa uniwersalna urządzenia np. termometr
     Device_Adress = ''      # Unikalny adres portfela urządzenia
     Device_Type = ''        # Typ techniczny np. MC_DS18b20
