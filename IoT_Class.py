@@ -5,7 +5,7 @@ class IoT_Device:
     Device_Wallet_Public_Key = ''       # Klucz publiczny portfela
     Device_Wallet_Private_Key = ''      # Klucz prywatny portfela
     Device_Wallet_Amount = ''           # Ostatnia znana ilość tokenów w portfelu
-    Device_ID = ''                      # ID Urządzenia
+    Device_ID = ''                      # ID Urządzenia - Unikalne
     Device_IP = ''                      # Ostatnie znane IP urządzenia
     Device_Software_Version = ''        # Numer wersji oprogramowania
     Device_Owner_Adress = ''            # Unikalny adres użytkownika
@@ -16,7 +16,7 @@ class IoT_Device:
     Device_ON_Off = ''                  # Czy urządzenie jest Online czy Offline [0 - Offline 1 - Online]
     Device_Registration_Date = ''       # Data i czas rejestracji urządzenia
     Device_Last_Activity_Date = ''      # Data i czas ostatniej aktywności
-    Device_Returned_Data_List = ''      # Lista danych lub stanów zwracanych przez urządzenie
+    Device_Returned_Data_List = ''      # Lista danych lub stanów zwracanych przez urządzenie - raczej słownik?
     Device_Returned_Data_Interval = ''  # Interwał zwracania danych przez urządzenie
 
 class IoT_User:
@@ -33,6 +33,18 @@ class IoT_User:
     User_IP = ''                        # Oststnie znane IP użytkownika
     User_Last_Activity_Date =''         # Data i czas oststniej aktywności użytkownika
 
+class IoT_Relations:
+    Relations_Partner_ID_IN = ''
+    Relations_Partner_ID_OUT = ''
+    Relations_IN_Data_List = ''
+    Relations_OUT_Data_List = ''
+    Relations_Conditions_List = ''
+
+
+class IoT_Actions:
+    Actions_Device_ID = ''
+    Actions_Status = ''
+    Actions_List = ''
 
 
 
