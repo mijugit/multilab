@@ -19,6 +19,12 @@ class IoT_Device:
     Device_Returned_Data_List = ''      # Lista danych lub stanów zwracanych przez urządzenie - raczej słownik?
     Device_Returned_Data_Interval = ''  # Interwał zwracania danych przez urządzenie
 
+    def Device_Create_function(self):
+        pass
+
+    def Device_Delete_function(self):
+        pass
+
 class IoT_User:
     User_Name = ''                      # Nazwa użytkownika
     User_Description = ''               # Opis użytkownika
