@@ -7,7 +7,6 @@ from nltk.corpus import stopwords
 stop_words = open('stopwords-pl_UTF.txt', 'r',encoding='utf-8').read()
 
 example_text = """
-Inż. dr Jurga Michał.
 Panno święta, co Jasnej bronisz Częstochowy
 I w Ostrej świecisz Bramie! Ty, co gród zamkowy
 Nowogródzki ochraniasz z jego wiernym ludem!
