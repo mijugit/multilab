@@ -4,7 +4,7 @@
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.corpus import stopwords
 
-stop_words = open('/sciezka/do/pliku/na/serwerze/plik.txt', 'r').read()
+stop_words = open('stopwords-pl_UTF.txt', 'r',encoding='utf-8').read()
 
 example_text = """
 Inż. dr Jurga Michał.
@@ -50,5 +50,4 @@ Brama na wciąż otwarta przechodniom ogłasza,
 print(sent_tokenize(example_text,'polish'))
 print(word_tokenize(example_text,'polish'))
 
-stop_words = set(stopwords.words("polish"))
 print(stop_words)
