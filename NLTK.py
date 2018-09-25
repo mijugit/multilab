@@ -1,6 +1,13 @@
+# coding: utf-8
+'NLTK'
+
 from nltk.tokenize import sent_tokenize, word_tokenize
+from nltk.corpus import stopwords
+
+stop_words = open('/sciezka/do/pliku/na/serwerze/plik.txt', 'r').read()
 
 example_text = """
+Inż. dr Jurga Michał.
 Panno święta, co Jasnej bronisz Częstochowy
 I w Ostrej świecisz Bramie! Ty, co gród zamkowy
 Nowogródzki ochraniasz z jego wiernym ludem!
@@ -40,4 +47,8 @@ Brama na wciąż otwarta przechodniom ogłasza,
 Że gościnna, i wszystkich w gościnę zaprasza.
 """
 
-print(sent_tokenize(example_text))
+print(sent_tokenize(example_text,'polish'))
+print(word_tokenize(example_text,'polish'))
+
+stop_words = set(stopwords.words("polish"))
+print(stop_words)
